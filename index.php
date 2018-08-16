@@ -85,20 +85,23 @@ body {
 
 <body>
 
-<?
-include("./dbconnection.php");
-      $connect=dbconn();
-      ?>
-
 
 <h3 id="title">금촌고등학교 2-1반 학급선거 웹</h3>
 
 
-<h4 id="b1">시계가 들어갈자리</h4>
 
-<form action="result.php" method="post" class="b2">
-  <p><input type="text" name="voter_name" placeholder="Name"></p>
+
+
+<form action="result.php" method="post" id="b1">
+  <h3>한 번만 투표해주세요!</h3>
+  <p><input type="text" name="voter_name" placeholder="반장"></p>
+  <p><input type="text" name="voter_name2" placeholder="부반장"></p>
+  <input type="text" name="classcode" placeholder="학번">
   <p><input type="submit"></p>
+
+
+
+
 
 
 
